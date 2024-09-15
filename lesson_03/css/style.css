@@ -1,0 +1,73 @@
+@import url(reset.css);
+*{
+    color: grey;
+}
+
+p{
+    color: blueviolet;
+}
+
+h4{
+    color: green;
+}
+
+.title {
+    color: violet;
+}
+
+.chapter-3{
+    color: orangered;
+}
+
+#content{
+    color: aquamarine;
+}
+
+[class*="te"] {
+    color: red;
+}
+
+h2.text {
+    color: purple;
+}
+
+.list-1,
+.chapter,
+.paragraph {
+    color: yellowgreen;
+}
+
+.chapter-2 h2 {
+    color: black;
+}
+.last-section a {
+    color: mediumvioletred;
+}
+
+.main-list li {
+    color: darkred;
+}
+
+.section-1 .pink-text {
+    color: pink;
+}
+
+.list-2 *{
+    color: aquamarine;
+}
+
+.last-section .summary {
+    color: lightcoral;
+}
+
+.section-gerishaska > .blue-text {
+    color: blue;
+}
+
+.section-brebeneskul h3 ~ p{
+    color: orange;
+}
+
+.last-section a + p{
+    color: darkblue;
+}

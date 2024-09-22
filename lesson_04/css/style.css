@@ -109,6 +109,14 @@ text-decoration-style: double;
     text-decoration-line: underline;
 }
 
+
+#title-section-2 {
+    font-size: 48px;
+    color: #6d40c2;
+    text-align: center;
+}
+
+
 .title {
     color: #132238;
     font-family: "Work Sans";

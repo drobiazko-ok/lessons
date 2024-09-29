@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    color: blue;
+    font-size: 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header-container {
+    max-width: 1200px;
+    background-image: url("../img/pattern.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    min-height: 300px;
+}
+
+.header>.header-container>h1 {
+    font-size: 100px;
+    font-weight: 800;
+    padding: 15px;
+    text-align: center;
+    color: #181716;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    padding-top: 85px;
+}
+
+.page>.features-page {
+    font-family: "Epilogue", sans-serif;
+    background-color: #FDF0E9;
+    margin-bottom: 20px;
+}
+
+.page>.features-page>.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0px;
+    padding-inline: 136px;
+}
+
+.page>.features-page>.container>.left-side {
+    display: inline-block;
+    max-width: 50%;
+    padding-top: 60px;
+}
+
+.page>.features-page>.container>.left-side>.subtitle {
+
+    color: #EF6D58;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.page>.features-page>.container>.left-side>.title {
+    color: #391400;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    margin-bottom: 26px;
+}
+
+.page>.features-page>.container>.left-side>.text {
+    color: #391400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 26px;
+}
+
+.page>.features-page>.container>.left-side>.list {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 11px;
+}
+
+.page>.features-page>.container>.left-side>.list>.item {
+    margin-bottom: 16px;
+}
+
+.page>.features-page>.container>.left-side>.list>.last {
+    margin-bottom: 0px;
+}
+
+.page>.features-page>.container>.left-side>.list>.item {
+    background: url("../img/check.svg") 0 0 / 30px no-repeat;
+    padding-left: 40px;
+    min-height: 40px;
+    vertical-align: middle;
+}
+
+.page>.features-page>.container>.right-side {
+    max-width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page>.features-page>.container>.right-side>.features-img {
+    width: 100%;
+}
+
+.page>.streaming-page {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #141414;
+    padding-bottom: 30px;
+}
+
+.streaming-page>.container>.background {
+    min-height: 860px;
+    background: url(../img/abstract-image.svg) center / 470px no-repeat,
+        linear-gradient(0deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 1) 100%),
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%),
+        url(../img/group-image.png) center / cover no-repeat;
+}
+
+.streaming-page>.container>.content-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-inline: 15px;
+    margin-top: -64px;
+}
+
+.streaming-page>.container>.content-container>.content {
+    text-align: center;
+}
+
+.streaming-page>.container>.content-container>.content>.title {
+    color: var(--Absolute-White, #FFF);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 14px;
+}
+
+.streaming-page>.container>.content-container>.content>.text {
+    color: var(--Grey-60, #999);
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 50px;
+}
+
+.streaming-page>.container>.content-container>.content>.button {
+    min-width: 209px;
+    min-height: 52px;
+    border-radius: 8px;
+    background-color: #E50000;
+    background: url("../img/button.svg") 24px 50% no-repeat,
+        #E50000;
+    padding: 14px 24px 14px 0px;
+    padding-left: 55px;
+}
+
+.streaming-page>.container>.content-container>.content>.button>.button-text {
+    display: inline-block;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.practice>.container {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    background-image: linear-gradient(0deg, rgba(28, 212, 205, 0.9094231442577031) 0%, rgba(209, 241, 153, 0.8982186624649859) 59%);
+    margin-bottom: 15px;
+}
+
+.practice>.container>.block-1 {
+    border: 3px solid green;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 60px 10px rgb(140, 134, 30);
+    background-image: url("../img/pattern-picture.jpg");
+    color: #FFF;
+    padding: 15px;
+    background-attachment: fixed;
+    min-height: 100px;
+    max-width: 400px;
+}
+
+.practice>.container>.block-1:hover {
+    border-color: transparent;
+}
+
+.practice>.container>.block-2 {
+    border-block: 5px dashed orange;
+    font-size: 48px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(90deg, rgba(207, 83, 222, 0.8141850490196079) 10%, rgba(150, 233, 148, 1) 94%);
+}
+
+.practice>.container>.block-3 {
+    display: inline-block;
+    max-width: 600px;
+    border-top: 5px dotted blue;
+    border-right: 8px dashed yellow;
+    border-bottom: 2px solid red;
+    border-left: 4px double gray;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: url("../img/reef.png") center / cover no-repeat;
+}
+
+.practice>.container>img {
+    display: block;
+    max-height: 300px;
+    max-width: 400px;
+    border: 20px solid rgb(203, 49, 49);
+    border-radius: 40px 0px 40px 0px;
+    margin-bottom: 15px;
+}
+
+.practice>.container>.circle {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(29, 168, 89, 0.625);
+    border-radius: 50%;
+    box-shadow: -10px 10px 30px 10px rgb(75, 101, 85);
+    margin: 30px;
+}
+
+.practice>.container>.figure-1 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #187ecc;
+    border-radius: 56% 44% 50% 50% / 61% 0% 100% 39%;
+    box-shadow: inset 20px 10px 90px 30px rgb(43, 43, 96);
+    margin: 30px;
+}
+
+.practice>.container>.figure-2 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #af3030;
+    opacity: 60%;
+    margin: 30px;
+}
+
+.practice>.container>.bg-repeat {
+    min-height: 300px;
+    max-width: 300px;
+    padding: 15px;
+    background-image: url(../img/check.svg);
+    background-repeat: repeat-y;
+    border: 10px dotted orangered;
+    background-position: 50% 50%;
+}
+
+.footer {
+    background-color: rgb(32, 122, 211);
+}
+
+.footer>.footer-container {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(10, 13, 16);
+    font-size: 48px;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(222, 188, 35, 0.339);
+}
+
+.header-container {
+    max-width: 1230px;
+    padding: 15px;
+    margin: 0 auto;
+    background: rgba(157, 150, 155, 0.554);
+    border-radius: 25px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 800;
+    max-width: 600px;
+    min-height: 150px;
+    background-color: rgba(20, 107, 179, 0.775);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 50px;
+    color: #eff7f7;
+    letter-spacing: 15px;
+    margin-bottom: 15px;
+}
+
+.navigation-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.navigation-list li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #9c1616;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navigation-list a:hover {
+    text-decoration: underline;
+}
+
+.main-practice-container {
+    padding-inline: 15px;
+    margin: 0 auto;
+    background-color: rgba(222, 188, 35, 0.339);
+}
+
+.main-practice-container>div:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.practice-title {
+    max-width: 25%;
+    background-color: #a8ad8f8e;
+    padding-inline: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+
+.card {
+    width: 30%;
+    padding: 15px;
+    background-color: rgba(20, 107, 179, 0.775);
+    border-radius: 0px 20px;
+    font-weight: 700;
+    text-align: center;
+    color: blanchedalmond;
+    letter-spacing: 5px;
+    margin: 20px;
+}
+
+.hover-card-1:hover {
+    color: black;
+    background-color: rgba(141, 149, 36, 0.573);
+    text-decoration: underline;
+}
+
+.hover-card-2:hover {
+    background-color: rgba(200, 141, 208, 0.573);
+    box-shadow: 5px 0px 5px 5px rgba(20, 20, 20, 0.609);
+}
+
+.hover-card-3 {
+    visibility: hidden;
+}
+
+.hover-section:hover .hover-card-3 {
+    visibility: visible;
+}
+
+.active-card-1:active {
+    color: blue;
+    text-decoration: double;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+
+.active-card-2:active {
+    box-shadow: 2px 2px 2px 3px rgb(180, 98, 180);
+    background-color: #4e5b5e;
+    color: rgb(233, 247, 244);
+}
+
+.active-card-3:active {
+    opacity: 0.5;
+}
+
+.visited-card-1:visited {
+    color: rgb(31, 37, 19);
+    background-color: rgb(115, 135, 115);
+}
+
+.visited-card-2:visited {
+    color: blue;
+}
+
+.visited-card-3:visited {
+    background-color: chocolate;
+}
+
+.focus-card-1:focus-visible {
+    outline: 3px solid rgb(33, 33, 12);
+}
+
+.focus-card-2:focus-visible {
+    outline: 5px double red;
+}
+
+.hover-section:target {
+    background-color: rgba(199, 199, 216, 0.881);
+    border-radius: 10px;
+}
+
+.active-section:target {
+    background-color: rgba(199, 199, 216, 0.881);
+    border-radius: 10px;
+}
+
+.visited-section:target {
+    background-color: rgba(199, 199, 216, 0.881);
+    border-radius: 10px;
+}
+
+.text-block * {
+    padding: 20px;
+}
+
+/* В цьому випадку кожен тег який буде першим (навіть якщо замовник буде їх міняти) буде фарбуватись помаранчевим */
+.text-block *:first-child {
+    background-color: orange;
+}
+
+/* Якщо саме тег р буде першим то фон стане помаранчевим
+.text-block p:first-child {
+    background-color: orange;
+} */
+
+.text-block div:first-of-type {
+    background-color: chocolate;
+}
+
+/* В цьому випадку зафарбуються всі перші різні теги (p, div,span)
+.text-block *:first-of-type {
+    background-color: rgb(41, 108, 82);
+} */
+
+.text-block a:first-of-type {
+    background-color: chocolate;
+}
+
+.text-block p:last-child {
+    background-color: rgb(207, 191, 70);
+}
+
+.text-block div:last-of-type {
+    background-color: rgb(175, 151, 141);
+}
+
+.text-block p:nth-child(2) {
+    background-color: rgba(137, 54, 54, 0.802);
+    color: rgb(210, 218, 225);
+}
+
+.text-block div:nth-of-type(2) {
+    background-color: rgba(212, 73, 127, 0.73);
+}
+
+.text-block p:nth-of-type(3) {
+    background-color: rgba(212, 73, 127, 0.73);
+}
+
+.text-block a:hover {
+    text-decoration: underline;
+}
+
+.items-container {
+    font-size: 0px;
+    margin-inline: -12px;
+    margin: 0 auto;
+}
+
+.algorithm-item {
+    display: inline-block;
+    width: 25%;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #dedcd7cc;
+    vertical-align: top;
+}
+
+.items-container p:nth-of-type(3n) {
+    color: rgb(32, 51, 171);
+    background-color: rgba(155, 199, 202, 0.57);
+}
+
+.items-container p:nth-of-type(3n+2) {
+    background-color: #eff7f7;
+    color: rgb(144, 93, 93);
+}
+
+.items-container p:nth-of-type(3n+1) {
+    background-color: rgba(9, 8, 8, 0.762);
+    color: rgb(246, 239, 230);
+}
+
+.has-section {
+    max-width: 830px;
+    padding: 15px;
+    background-color: #d3c4c479;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.has-block-text:has(span) {
+    background-color: rgba(15, 16, 16, 0.774);
+    color: rgb(231, 227, 222);
+    border-radius: 15px;
+    padding-inline: 10px;
+}
+
+.not-section p:not(:nth-of-type(4)) {
+    background-color: rgba(110, 85, 134, 0.607);
+}
+
+.not-section p:not(.not-white) {
+    color: rgb(255, 255, 255);
+}
+
+.not-section *:not(h2) {
+    text-decoration: underline;
+    text-decoration-color: rgb(19, 19, 19);
+}
+
+.not-section>*:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.before-title::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon-2.png) 0 0 / 30px no-repeat;
+    vertical-align: middle;
+}
+
+.before-title::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon-1.png) 0 0 / 30px no-repeat;
+    vertical-align: middle;
+}
+
+
+.before-example::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #4e5b5e;
+    margin-right: 5px;
+}
+
+.after-example::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-4.png) 0 0 / 20px no-repeat;
+}
+
+.game-block {
+    max-width: 750px;
+    background: url(../img/jungle.webp) 0 0 / 750px no-repeat;
+    min-height: 750px;
+    margin: 0 auto;
+}
+
+.game-start {
+    line-height: 1.3;
+    height: 80px;
+    width: 80px;
+    background-color: #c62732;
+    margin: 20px 50px 0px 485px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 25px;
+    color: #F0F0F6;
+}
+
+.game-line {
+    background-color: #ac2c12;
+}
+
+.line-1 {
+    height: 115px;
+    width: 30px;
+    margin: 0px 50px 0px 510px;
+}
+
+.line-2 {
+    width: 200px;
+    margin: 0px 50px 0px 340px;
+    height: 20px;
+}
+
+.line-3 {
+    width: 20px;
+    height: 50px;
+    margin-left: 340px;
+}
+
+.line-4 {
+    height: 20px;
+    width: 270px;
+    margin: 0px 340px 0px 90px;
+}
+
+.line-5 {
+    width: 20px;
+    height: 125px;
+    margin-left: 90px;
+}
+
+.line-6 {
+    width: 300px;
+    height: 20px;
+    margin-left: 90px;
+}
+
+.line-7 {
+    width: 20px;
+    height: 110px;
+    margin-left: 370px;
+}
+
+.line-8 {
+    height: 20px;
+    width: 230px;
+    margin-left: 370px;
+}
+
+.line-9 {
+    width: 20px;
+    height: 80px;
+    margin-left: 580px;
+}
+
+.game-end {
+    line-height: 1.3;
+    height: 80px;
+    width: 80px;
+    background-color: #9c1616;
+    margin: 0px 50px 0px 550px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 28px;
+    color: #F0F0F6;
+}
+
+.game-block>*:not(.game-start) {
+    visibility: hidden;
+}
+
+.game-block>*:hover+*,
+.game-block>*:hover {
+    visibility: visible;
+}
+
+.layout-1-container {
+    max-width: 660px;
+    padding-inline: 15px;
+    background: #FFF;
+    margin: 0 auto;
+}
+
+.layout-1 .item {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    padding-block: 21px;
+}
+
+.layout-1 .item:not(:last-child) {
+    margin-bottom: 54px;
+}
+
+.search-icon::after {
+    content: "";
+    background: url(../img/search-image.png) 0 0 / 40px no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.date {
+    font-family: "DM Sans", sans-serif;
+    color: #4A3AFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    color: #1E1B39;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.29;
+    margin-bottom: 8px;
+}
+
+.timeline-text {
+    color: #6E6C83;
+    font-size: 24px;
+    line-height: 1.75;
+}
+
+.laptop-icon::after {
+    content: "";
+    background: url(../img/laptop-image.png) 0 0 / 40px no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.rocket-icon::after {
+    content: "";
+    background: url(../img/rocket-image.png) 0 0 / 40px no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.layout-2-container {
+    max-width: 543px;
+    border-radius: 56px;
+    padding: 24px 24px 58px 24px;
+    background: #F0F0F6;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.pricing-title {
+    border-radius: 34px;
+    background: #4A3AFF;
+    padding: 44.6px 10px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 34px;
+}
+
+.pricing-title>.value {
+    font-size: 30px;
+    opacity: 0.9;
+    line-height: 1.06;
+    margin-bottom: 2px;
+}
+
+.pricing-title>.cost {
+    font-size: 116px;
+    line-height: 1.05;
+    margin-bottom: 6px;
+}
+
+.pricing-title>.details {
+    font-size: 20px;
+    line-height: 1.1;
+    opacity: 0.6;
+}
+
+.pricing-list {
+    color: #1E1B39;
+    font-size: 28px;
+    line-height: 1.35;
+    padding-left: 12px;
+}
+
+.pricing-list li:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.pricing-item::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: url(../img/check-circle.svg) 0 0 /36px no-repeat;
+    vertical-align: middle;
+    margin-right: 14px;
+    margin-left: -50px;
+}
+
+.pricing-item {
+    padding-left: 50px;
+}
+
+.layout-3 {
+    width: 100%;
+    background: #FDF0E9;
+}
+
+.layout-3-container {
+    max-width: 1200px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.img-content {
+    max-width: 1000px;
+    padding-inline: 15px;
+    margin-bottom: 74px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+}
+
+.some-photo {
+    max-width: 970px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+.portfolio-text {
+    max-width: 600px;
+    padding-inline: 15px;
+    margin: 0 auto;
+    font-family: Epilogue, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    color: rgba(57, 20, 0, 0.64);
+}
+
+.text-dark {
+    color: #391400;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.portfolio-title {
+    color: #391400;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.34;
+    padding-bottom: 35px;
+}
+
+.text-top {
+    margin-bottom: 32px;
+}
+
+/* Оскільки в кожному блоці різні відступи, щоб не задавати кожному окремо margin-bottom взяла середнє значення відступу в 66рх */
+.portfolio-text>.section:not(:last-child) {
+    margin-bottom: 66px;
+}
+
+.section-2-text {
+    margin-bottom: 34px;
+}
+
+.promote-list {
+    color: #391400;
+    margin-bottom: 32px;
+}
+
+.promote-item::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #EF6D58;
+    ;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.section-3-text {
+    margin-bottom: 28px;
+}
+
+.section-4 {
+    border-radius: 6px;
+    background: #F9E5DA url(../img/shape.svg) 32px 42px / 48px no-repeat;
+    padding: 42px 32px 32px 112px;
+}
+
+.service-list>li:first-of-type::before {
+    content: "1.";
+    margin-right: 5px;
+}
+
+.service-list>li:nth-of-type(2)::before {
+    content: "2.";
+    margin-right: 5px;
+}
+
+.service-list>li:nth-of-type(3)::before {
+    content: "3.";
+    margin-right: 5px;
+}
+
+.service-list {
+    margin-bottom: 32px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(222, 188, 35, 0.339);
+}
+
+.footer-container {
+    background: rgba(157, 150, 155, 0.554);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+footer>.footer-container {
+    text-align: center;
+    font-size: 48px;
+}
+
+.footer-contain:hover {
+    text-shadow: -10px 2px 30px #060e0f;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: #1d1b1b;
+}

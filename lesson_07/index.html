@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 07</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-container">
+				<h1 class="main-title">lesson 07</h1>
+				<div class="navigation">
+					<ul class="navigation-list">
+						<li><a href="#hover">hover</a></li>
+						<li><a href="#active">active</a></li>
+						<li> <a href="#visited">visited</a></li>
+						<li> <a href="#focus">focus</a></li>
+						<li> <a href="#target">target</a></li>
+						<li> <a href="#first-last">first/last-child; first/last-of-type; nth-child/-of-type</a></li>
+						<li> <a href="#algorithms">algorithms nth</a></li>
+						<li><a href="#has">:has</a></li>
+						<li><a href="#not">:not</a></li>
+						<li> <a href="#before-after">pseudo-elements ::before and ::after</a></li>
+						<li> <a href="#game">game</a></li>
+						<li><a href="#layoyts">layouts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main-practice-container">
+				<div class="hover-section" id="hover">
+					<h2 class="practice-title">:hover</h2>
+					<a href="#" class="card hover-card-1">:hover 1</a>
+					<a href="#" class="card hover-card-2">:hover 2</a>
+					<a href="#" class="card hover-card-3">:hover 3</a>
+				</div>
+				<div class="active-section" id="active">
+					<h2 class="practice-title">:active</h2>
+					<a href="#" class="card active-card-1">:active 1</a>
+					<a href="#" class="card active-card-2">:active 2</a>
+					<a href="#" class="card active-card-3">:active 3</a>
+				</div>
+				<div class="visited-section" id="visited">
+					<h2 class="practice-title">:visited</h2>
+					<a href="https://www.google.com.ua/?hl=uk" target="_blank" class="card visited-card-1">google</a>
+					<a href="https://github.com/" target="_blank" class="card visited-card-2">github</a>
+					<a href="https://www.figma.com/" target="_blank" class="card visited-card-3">figma</a>
+				</div>
+				<div class="focus-section" id="focus">
+					<h2 class="practice-title">:focus-visible</h2>
+					<a href="#" class="card focus-card-1">:focus visible 1</a>
+					<a href="#" class="card focus-card-2">:focus visible 2</a>
+				</div>
+				<div class="target-section" id="target">
+					<h2 class="practice-title">:target</h2>
+					<a href="#hover" class="card target-card-1">go to hover section</a>
+					<a href="#active" class="card target-card-2">go to active section</a>
+					<a href="#visited" class="card target-card-3">go to visited section</a>
+				</div>
+				<div id="first-last" class="text-block">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequuntur doloribus maiores
+						dolores possimus ut velit inventore nostrum dicta? Beatae iusto molestias dolorum unde natus
+						earum dignissimos vitae blanditiis tenetur.
+						Ipsam qui eligendi autem necessitatibus error? Sequi ab temporibus nihil eaque quia magni, non
+						accusantium explicabo cum ullam expedita officia? Pariatur quod tempore aliquid numquam quas
+						quos excepturi inventore ipsum.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magnam accusamus libero. Aliquid
+						soluta, delectus molestias, dolorum saepe velit magni voluptatem enim quis adipisci illum
+						eveniet nobis ipsum. Quod, totam!</p>
+					<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi architecto ducimus eligendi
+						laborum fugiat doloribus tempora obcaecati, corrupti repellat facere in delectus quasi, sunt
+						quibusdam. Qui asperiores reiciendis voluptate iste?
+						Est doloribus voluptatibus ducimus, voluptatum dignissimos reprehenderit impedit facilis nam
+						delectus ipsa, mollitia odit tempore porro quo nostrum libero culpa molestiae labore minima
+						corrupti harum. Repudiandae quisquam ut fuga eius.</div>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit beatae itaque delectus
+						saepe inventore sit ipsam fugiat numquam iste libero fuga nostrum perferendis, illum natus sed
+						quos exercitationem earum quibusdam!</p>
+					<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, repellendus aliquid cumque sit
+						itaque eaque reiciendis molestias, dolore nihil, eligendi ipsam iste? Vel architecto laudantium
+						ad, quam dolorem voluptatum nesciunt!</div>
+					<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem neque odit, dolor atque
+						aliquid vel dignissimos voluptatum vero dolore rerum error reiciendis commodi minus ab sed fugit
+						iure natus nesciunt.</div>
+					<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio, minima doloremque
+						amet iusto, molestias qui, modi soluta at nisi voluptate voluptatem culpa corrupti magnam quia
+						assumenda? Cumque, aperiam provident.</a>
+					<p>Lorem ipsusm dolor sit amet consectetur adipisicing elit. Quia nihil error facilis praesentium
+						voluptatibus architecto recusandae, corporis veniam fugiat. Amet quaerat sapiente delectus
+						reprehenderit atque placeat molestias, quis inventore totam.</p>
+				</div>
+				<div id="algorithms" class="algorithms-block">
+					<h2 class="practice-title">algorithms nth</h2>
+					<div class="items-container">
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+							praesentium fuga, distinctio nisi consequatur, aperiam, perferendis non maiores voluptate
+							necessitatibus aspernatur porro animi nesciunt eligendi.</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+							distinctio magnam atque autem reprehenderit commodi quos. Et dolore dignissimos voluptatum
+							maxime magni? Incidunt id at aliquid necessitatibus, architecto amet sed?</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+							praesentium fuga, distinctio nisi consequatur, aperiam, perferendis non maiores voluptate
+							necessitatibus aspernatur porro animi nesciunt eligendi.</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+							distinctio magnam atque autem reprehenderit commodi quos. Et dolore dignissimos voluptatum
+							maxime magni? Incidunt id at aliquid necessitatibus, architecto amet sed?</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+							iusto repellendus perferendis dolores odit earum, illum quibusdam. Sint reiciendis quod
+							eligendi esse accusantium beatae officia facere doloribus cum, mollitia incidunt!</p>
+						<p class="algorithm-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+							sint unde asperiores voluptate eaque soluta, quam, iusto iure quaerat, tempora impedit
+							assumenda ratione blanditiis reprehenderit pariatur dicta! Eos, voluptas adipisci.</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere a
+							consequatur earum sit expedita. Dolore eligendi possimus placeat! Veniam neque molestiae
+							laboriosam, necessitatibus blanditiis repudiandae dolorum magni dicta voluptate</p>
+						<p class="algorithm-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+							voluptatem pariatur officia ex autem soluta similique dignissimos eos nihil voluptas amet
+							dolores sequi, odit porro? Quos, corrupti laboriosam? Quod, non!</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+							impedit laboriosam ea officia iure id, voluptatibus alias eaque quas similique blanditiis
+							nam in quae voluptas quisquam veritatis illo reprehenderit maxime.</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima
+							et recusandae maxime consequuntur eum possimus ratione ea tenetur quod sed sequi adipisci,
+							assumenda eligendi quis magni dicta voluptate maiores magni dicta voluptate?</p>
+						<p class="algorithm-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+							explicabo sapiente at, facere voluptas asperiores quis. Vitae deleniti fuga voluptatum!
+							Doloribus accusantium iste ea modi asperiores natus pariatur reiciendis officiis.</p>
+						<p class="algorithm-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eum
+							alias, expedita ab cum sed labore velit! Aliquam expedita omnis aspernatur libero. Nulla,
+							aspernatur commodi quidem dolor inventore reiciendis recusandae?</p>
+					</div>
+				</div>
+				<div id="has" class="has-section">
+
+					<h2 class="practice-title">:has</h2>
+					<div class="has-block-text">
+						<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi labore, officiis
+							provident nemo, expedita
+							harum rem eos maiores sit obcaecati laboriosam eligendi quo libero dolor hic necessitatibus
+							eaque tenetur!</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod similique nemo modi earum
+							beatae ipsum
+							praesentium commodi enim? Enim placeat modi voluptatem autem assumenda at ducimus quaerat
+							excepturi neque.</p>
+						<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, hic odio unde, officia ea
+							id eveniet eum error
+							facere nesciunt quos perferendis rerum quaerat, fuga minus perspiciatis. Assumenda, tempora
+							eius.</div>
+					</div>
+					<div class="has-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus earum doloribus ut
+							ab ipsam, sint accusantium cum excepturi voluptate tempora optio nobis laborum facere.
+							Suscipit consequuntur quibusdam dolorem commodi vero.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, tempora vitae accusantium,
+							doloremque illo unde id eveniet magnam sit, odit sequi animi delectus pariatur illum vel.
+							Expedita quas esse qui!</p>
+					</div>
+				</div>
+				<div id="not" class="not-section">
+					<h2 class="practice-title">:not</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque cupiditate facilis quibusdam at
+						officia fugit temporibus deleniti beatae, provident aut eveniet quos mollitia veniam tempora
+						esse rerum! Consectetur, quasi debitis?</p>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque cupiditate facilis quibusdam at
+						officia fugit temporibus deleniti beatae, provident aut eveniet quos mollitia veniam tempora
+						esse rerum! Consectetur, quasidebitis?</p>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque cupiditate facilis quibusdam at
+						officia fugit temporibus deleniti beatae, provident aut eveniet quos mollitia veniam tempora
+						esse rerum! Consectetur, quasidebitis?</p>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi temporibus vel, blanditiis
+						voluptates quo velit nemo magni, eveniet, distinctio nesciunt totam doloremque autem ratione nam
+						modi natus exercitationem at provident.</p>
+					<p class="not-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quasi tempora
+						quod ratione placeat earum animi exercitationem nostrum dicta perferendis! Aut facere
+						exercitationem expedita eius numquam perferendis porro rem non!</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius culpa porro sit ipsam velit cum
+						magni maiores dolores fuga blanditiis quod omnis voluptatem dicta sunt temporibus ea maxime,
+						iusto totam?</p>
+				</div>
+				<div id="before-after" class="pseudo-elements-section">
+					<h2 class="practice-title before-title">::before, ::after</h2>
+					<p class="before-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, vero
+						voluptatibus delectus enim quidem mollitia hic atque velit numquam sed fugiat sunt modi omnis
+						repellendus aspernatur! Quam consequuntur eveniet dignissimos?</p>
+					<p class="after-example">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro earum
+						ducimus sapiente natus officia ipsa, cumque veritatis cupiditate placeat adipisci quod iusto
+						repellendus est, fugit nihil autem minus voluptatibus eaque.</p>
+				</div>
+				<div id="game" class="game-block">
+					<div class="game-start">start</div>
+					<div class="game-line line-1"></div>
+					<div class=" game-line line-2"></div>
+					<div class=" game-line line-3"></div>
+					<div class=" game-line line-4"></div>
+					<div class=" game-line line-5"></div>
+					<div class=" game-line line-6"></div>
+					<div class=" game-line line-7"></div>
+					<div class=" game-line line-8"></div>
+					<div class=" game-line line-9"></div>
+					<div class="game-end">winner!!!</div>
+				</div>					
+			</div>
+			<div id="layoyts" class="layout-1">
+				<div class="layout-1-container">
+					<div class="item">
+						<p class="date">Jan 2023</p>
+						<h2 class="timeline-title search-icon">Research & discovery</h2>
+						<p class="timeline-text">Et arcu aliquam viverra felis rhoncus vitae arcu eget urna viverra
+							massa nullaolmerolil fermentum congue ultrices.</p>
+					</div>
+					<div class="item">
+						<p class="date">Feb 2023</p>
+						<h2 class="timeline-title laptop-icon">Product development</h2>
+						<p class="timeline-text">Libero sed nibh dictumst viverra tincidunt nulla risusolm neque lorem
+							sed elementum adipiscing purus massa.</p>
+					</div>
+					<div class="item">
+						<p class="date">Apr 2023</p>
+						<h2 class="timeline-title rocket-icon">Product launch</h2>
+						<p class="timeline-text">In diam aenean nunc amet faucibus commodo mattisole tincidunt euismod
+							quis gravida tellus eros venenatis.</p>
+					</div>
+				</div>
+			</div>
+			<div class="layout-2">
+				<div class="layout-2-container">
+					<div class="pricing-title">
+						<div class="value">Basic</div>
+						<div class="cost">$99</div>
+						<div class="details">Billed monthly</div>
+					</div>
+					<ul class="pricing-list">
+						<li class="pricing-item">All analytics features</li>
+						<li class="pricing-item">Up to 250,000 tracked visits</li>
+						<li class="pricing-item">Normal support</li>
+						<li class="pricing-item">Up to 3 team members</li>
+					</ul>
+				</div>
+			</div>
+			<div class="layout-3">
+				<div class="layout-3-container">
+					<div class="img-content">
+						<img class="some-photo" src="img/portfolio-picture.png"
+							alt="a picture with a  boy and a girl  whi are sitting at the office table. They are working with laptop and smiling">
+					</div>
+					<div class="portfolio-text">
+						<div class="section">
+							<p class="text-dark text-top">Agency provides a full service range including technical skills, design, business
+								understanding.</p>
+							<p>Outsource your digital marketing efforts, instead of handling in-house. They can provide
+								your business with a variety of
+								digital solutions to promote your product or service online and help you.</p>
+						</div>
+						<div class="section">
+							<h3 class="portfolio-title">Promote your product</h3>
+							<p class="section-2-text">Ability to put themselves in the merchant's shoes. It is meant to partner on the long
+								run, and work as an extension of
+								the merchant's team.</p>
+							<ul class="promote-list">
+								<li class="promote-item">Digital marketing</li>
+								<li class="promote-item">Efforts instead</li>
+								<li class="promote-item">Handling in-house</li>
+							</ul>
+							<p>A digital agency is a business you hire to outsource your digital marketing efforts,
+								instead of handling in-house. They
+								can provide your business with a variety of digital solutions to promote your product or
+								service online and help you.</p>
+						</div>
+						<div class="section">
+							<h3 class="portfolio-title">Service online and help</h3>
+							<p class="section-3-text">Put themselves in the merchant's shoes. It is meant to partner on the long run, and work
+								as an extension of the
+								merchant's team.</p>
+							<ol class="service-list">
+								<li class="service-item">Marketing efforts</li>
+								<li class="service-item">Instead of handling</li>
+								<li class="service-item">In-house</li>
+							</ol>
+							<p>Agency is a business you hire to outsource your digital marketing efforts, instead of
+								handling in-house. They can
+								provide your business with a variety of digital solutions to promote your product or
+								service online and help you.</p>
+						</div>
+						<div class="section section-4">
+							<p class="text-dark">Provide your business with a variety of digital solutions to promote your product or
+							service online and help you.</p>
+						</div>
+						<div class="section">
+							<p>Outsource your digital marketing efforts, instead of handling in-house. They can provide
+								your business with a variety of
+								digital solutions to promote your product or service online and help you.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="contain"><a class="footer-contain" href="#game">let's play again</a></div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Yatra+One:regular&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: "Yatra One", sans-serif;
+    font-size: 18px;
+    color: rgb(246, 246, 235);
+    background-color: rgb(21, 20, 22);
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header-container,
+.footer-container {
+     max-width: 80%;
+     border: 5px solid rgba(217, 38, 38, 0.394);
+     text-align: center;
+     margin: 0 auto;
+     line-height: 2;
+     font-size: 28px;
+     letter-spacing: 5px;
+     border-radius: 15px; 
+}
+
+
+.main-container {
+    max-width: 100%;
+    padding: 15px;
+}
+
+.main-container > div:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.elements-block {
+    max-width: 1000px;
+    border: 6px solid rgb(227, 5, 16);
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+.block-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.main-picture {
+    max-width: 600px;
+}
+
+.picture-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.elements-block div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.img-text {
+    display: inline-block;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.content-img {
+    max-width: 25%;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.svg-red path {
+    fill: red;
+}
+
+.elements-block:hover {
+    box-shadow: 0px 0px 15px 7px red;
+}

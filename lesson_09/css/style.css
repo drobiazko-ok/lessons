@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    background-color: rgba(186, 186, 172, 0.81);
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header__container,
+.footer__container {
+    max-width: 80%;
+    padding: 15px;
+    background-color: #ffffff72;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+.page {
+    padding-inline: 15px;
+}
+
+.header__title {
+    color: rgb(11, 11, 16);
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.footer__text {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;    
+}

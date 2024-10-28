@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 10</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--margin">
+			<div class="header__container">
+				<div class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="#relative">Relative</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#index">Z-index</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#absolute">Absolute</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#sticky">Sticky</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#layouts">layouts</a>
+							<ul class="sub-menu">
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#layouts">layout 1</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#layout 2">layout 2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<h1 class="main-title title">Lesson 10</h1>
+				<div id="relative" class="section-relative">
+					<h2 class="section-relative__title title">Position: relative</h2>
+					<div class="section-relative__item section-relative__item--red">Блок 1 (static)</div>
+					<div class="section-relative__item section-relative__item--green">Блок 2 (relative)</div>
+					<div class="section-relative__item section-relative__item--yellow">Блок 3 (static)</div>
+				</div>
+				<div id="index" class="section-index">
+					<h2 class="section-index__title title">Z-index</h2>
+					<div class="section-index__item section-index__item--red">Блок 1 (z-index: 3)</div>
+					<div class="section-index__item section-index__item--green">Блок 2 (z-index: 2)</div>
+					<div class="section-index__item section-index__item--yellow">Блок 3 (z-index: -1)</div>
+				</div>
+				<div id="absolute" class="section-absolute">
+					<h2 class="section-absolute__title title">Position: absolute</h2>
+					<div class="section-absolute__inner">
+						<div class="section-absolute__item section-absolute__item--red">Блок 1 (absolute, z-index: 2)
+						</div>
+						<div class="section-absolute__item section-absolute__item--green">Блок 2 (absolute)</div>
+						<div class="section-absolute__item section-absolute__item--yellow">Блок 3 (static)</div>
+					</div>
+				</div>
+				<div id="fixed" class="section-fixed">
+					<div class="section-fixed__item section-fixed__item--blue">Fixed</div>
+				</div>
+				<div id="sticky" class="section-sticky">
+					<div class="section-sticky__header">Sticky</div>
+					<div class="section-sticky__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						Porro quisquam dolores numquam. Officia consequatur nesciunt magnam sunt perferendis, id, hic
+						sequi aspernatur molestiae mollitia, esse natus! Impedit, atque quia. Assumenda?
+						Fugiat voluptas esse laborum excepturi corporis cum natus! Eveniet odit quibusdam recusandae
+						iste omnis sed iure eligendi sunt alias esse! Aut quas at modi blanditiis ducimus, in soluta.
+						Pariatur, perferendis.
+						Sint numquam repudiandae consectetur natus quidem saepe veritatis dolor eaque in illum. Itaque
+						quis autem similique fugiat! Fuga aliquam tempora consectetur officiis fugiat quam beatae culpa,
+						laudantium pariatur et sequi?
+						Fugiat voluptatibus quia nihil? Inventore officia aut placeat officiis repudiandae, nostrum rem,
+						facilis quibusdam ut dignissimos velit modi voluptatibus facere aliquam iste voluptatum quas
+						ducimus cupiditate odit! Nesciunt, eum nostrum.
+						Quam deleniti quis iusto. AspernaturLorem ipsum dolor sit amet consectetur, adipisicing elit.
+						Porro quisquam dolores numquam. Officia consequatur nesciunt
+						magnam sunt perferendis, id, hic sequi aspernatur molestiae mollitia, esse natus! Impedit, atque
+						quia. Assumenda?
+						Fugiat voluptas esse laborum excepturi corporis cum natus! Eveniet odit quibusdam recusandae
+						iste omnis sed iure
+						eligendi sunt alias esse! Aut quas at modi blanditiis ducimus, in soluta. Pariatur, perferendis.
+						Sint numquam repudiandae consectetur natus quidem saepe veritatis dolor eaque in illum. Itaque
+						quis autem similique
+						fugiat! Fuga aliquam tempora consecteturLorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Porro quisquam dolores numquam. Officia consequatur nesciunt
+						magnam sunt perferendis, id, hic sequi aspernatur molestiae mollitia, esse natus! Impedit, atque
+						quia. Assumenda?
+						Fugiat voluptas esse laborum excepturi corporis cum natus! Eveniet odit quibusdam recusandae
+						iste omnis sed iure
+						eligendi sunt alias esse! Aut quas at modi blanditiis ducimus, in soluta. Pariatur, perferendis.
+						Sint numquam repudiandae consectetur natus quidem saepe veritatis dolor eaque in illum. Itaque
+						quis autem similique
+						fugiat! Fuga aliquam tempora consectetur officiis fugiat quam beatae culpa, laudantium pariatur
+						et sequi?
+						Fugiat voluptatibus quia nihil? Inventore officia aut placeat officiis repudiandae, nostrum rem,
+						facilis quibusdam ut
+						dignissimos velit modi voluptatibus facere aliquam iste voluptatum quas ducimus cupiditate odit!
+						Nesciunt, eum nostrum.
+						Quam deleniti quis iusto. Aspernatur officiisLorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Porro quisquam dolores numquam. Officia consequatur nesciunt
+						magnam sunt perferendis, id, hic sequi aspernatur molestiae mollitia, esse natus! Impedit, atque
+						quia. Assumenda?
+						Fugiat voluptas esse laborum excepturi corporis cum natus! Eveniet odit quibusdam recusandae
+						iste omnis sed iure
+						eligendi sunt alias esse! Aut quas at modi blanditiis ducimus, in soluta. Pariatur, perferendis.
+						Sint numquam repudiandae consectetur natus quLorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Porro quisquam dolores numquam. Officia consequatur nesciunt
+						magnam sunt perferendis, id, hic sequi aspernatur molestiae mollitia, esse natus! Impedit, atque
+						quia. Assumenda?
+						Fugiat voluptas esse laborum excepturi corporis cum natus! Eveniet odit quibusdam recusandae
+						iste omnis sed iure
+						eligendi sunt alias esse! Aut quas at modi blanditiis ducimus, in soluta. Pariatur, perferendis.
+						Sint numquam repudiandae consectetur natus quLorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Porro quisquam dolores numquam. Officia consequatur nesciunt
+						magnam sunt perferendis, id, hic sequi aspernatur molestiae mollitia, esse natus! Impedit, atque
+						quia. Assumenda?
+						Fugiat voluptas esse laborum excepturi corporis cum natus! Eveniet odit quibusdam recusandae
+						iste omnis sed iure
+						eligendi sunt alias esse! Aut quas at modi blanditiis ducimus, in soluta. Pariatur, perferendis.
+						Sint numquam repudiandae consectetur natus quLorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Porro quisquam dolores numquam. Officia consequatur nesciunt
+						magnam sunt perferendis, id, hic sequi aspernatur molestiae mollitia, esse natus! Impedit, atque
+						quia. Assumenda?</div>
+				</div>
+			</div>
+			<div id="layouts" class="agency">
+				<div class="agency__container">
+					<div class="agency__illustration">
+						<div class="agency__image agency__image--top">
+							<img src="img/laptop.png" alt="picture of laptop">
+						</div>
+						<div class="agency__image agency__image--middle-circle">
+							<img src="img/stars.svg" alt="small stars">
+						</div>
+						<div class="agency__image agency__image--bottom-picture">
+							<img src="img/block.svg" alt="A picture with orange circle and gorizontal gray blocks">
+						</div>
+						<div class="agency__image agency__image--bottom-right">
+							<img src="img/photo.png" alt="photo of a smiling girl on a yellow background">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="layout 2" class="demonstration">
+				<div class="demonstration__container">
+					<div class="demonstration__card card">
+						<a class="card__item" href="#">
+							<img class="card__image" src="img/demo-card.jpg" alt="image of demonstration card">
+							<div class="card__inner">
+								<div class="card__label">Design</div>
+								<h3 class="card__title">SOFA</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__text"> october / 2024</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

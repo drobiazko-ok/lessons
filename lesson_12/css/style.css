@@ -1,0 +1,744 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    background-color: rgba(27, 27, 26, 0.81);
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.header__container {
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid rgb(14, 14, 14);
+    margin-bottom: 15px;
+}
+
+.header__content {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 2;
+    text-align: center;
+}
+
+.page {
+    position: relative;
+}
+
+.car {
+    min-height: 800px;
+    min-width: 1400px;
+    position: relative;
+}
+
+.car__container {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 20px;
+    transform: scale(0.5);
+    z-index: 10;
+}
+
+
+.car__body--bottom {
+    width: 600px;
+    height: 180px;
+    background-color: #1c1b1b;
+    position: absolute;
+    top: 480px;
+    left: 706px;
+    border-radius: 0% 100% 7% 93% / 100% 44% 56% 0%;
+    border: 10px solid rgba(99, 94, 94, 0.78);
+}
+
+.car__body--middle {
+    width: 600px;
+    height: 170px;
+    background-color: #1c1b1b;
+    position: absolute;
+    top: 390px;
+    left: 681px;
+    transform: skew(12deg);
+    border-radius: 0% 100% 0% 100% / 100% 33% 67% 0%;
+    border: 10px solid rgba(99, 94, 94, 0.78);
+}
+
+.car__body--top {
+    width: 600px;
+    height: 200px;
+    background-color: #1c1b1b;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    transform: skew(40deg);
+    border: 10px solid rgba(99, 94, 94, 0.78);
+}
+
+.car__body--back {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color: #1c1b1b;
+    transform: skew(-20deg);
+    border-top: 10px solid rgba(99, 94, 94, 0.78);
+}
+
+.car__body--back-middle {
+    width: 580px;
+    height: 135px;
+    position: absolute;
+    top: 398px;
+    left: 160px;
+    background-color: #1c1b1b;
+    border-radius: 11px;
+}
+
+.car__body--back-bottom {
+    width: 580px;
+    height: 140px;
+    position: absolute;
+    top: 520px;
+    left: 160px;
+    background-color: #1c1b1b;
+    border-radius: 100% 0% 88% 12% / 0% 100% 0% 100%;
+    border-bottom: 10px solid rgba(99, 94, 94, 0.78);
+}
+
+.wheels {
+    width: 280px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 525px;
+}
+
+.wheels--right {
+    left: 270px;
+}
+
+.wheels--left {
+    left: 890px;
+}
+
+.wheels__main {
+    width: 240px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #110f0f;
+    border: 7px dashed rgba(53, 49, 49, 0.79);
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.wheels__bg {
+    width: 280px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #3f3636bc;
+    border: 3px solid rgb(28, 26, 26);
+    box-shadow: 0px 0px 2px 15px rgba(216, 18, 18, 0.382);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wheels__inner {
+    width: 90px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #3f3636bc;
+    border: 3px solid rgb(28, 26, 26);
+    z-index: 5;
+    box-shadow: 0px 0px 10px 10px gray;
+    position: absolute;
+    top: 95px;
+    left: 95px;
+}
+
+.wheels__inner::after {
+    content: "";
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: url(../img/label.png) center / cover no-repeat;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    z-index: 6;
+}
+
+
+.headlight__body--front {
+    width: 60px;
+    height: 85px;
+    background-color: rgb(218, 242, 79);
+    border: 5px solid rgba(85, 76, 76, 0.766);
+    position: absolute;
+    top: 450px;
+    left: 1190px;
+    border-radius: 50%;
+    box-shadow: 3px 0px 5px 10px rgba(233, 233, 138, 0.897);
+}
+
+.headlight__body--back {
+    width: 60px;
+    height: 70px;
+    background-color: rgba(151, 35, 35, 0.817);
+    position: absolute;
+    top: 409px;
+    left: 165px;
+    z-index: 3;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px 10px rgba(236, 20, 20, 0.578);
+}
+
+.window__main {
+    width: 170px;
+    height: 140px;
+    background: linear-gradient(243deg, rgba(189, 184, 193, 1) 0%, rgba(89, 69, 69, 1) 50%, rgba(14, 14, 13, 1) 100%);
+    position: absolute;
+    z-index: 10;
+    border: 3px solid rgb(56, 48, 48);
+    border-radius: 9px;
+    top: 230px;
+}
+
+.window__main--last {
+    left: 260px;
+    transform: skew(-20deg);
+}
+
+.window__main--middle {
+    left: 460px;
+}
+
+.window__main--head {
+    width: 230px;
+    left: 665px;
+    border-radius: 0% 100% 92% 8% / 91% 100% 0% 9%;
+}
+
+.handle__base {
+    width: 80px;
+    height: 20px;
+    background-color: rgba(51, 57, 55, 0.852);
+    border-radius: 5px;
+    position: absolute;
+    top: 430px;
+    box-shadow: 8px 0px 4px 5px rgba(82, 83, 81, 0.76);
+}
+
+.handle__base--right {
+    left: 670px;
+    z-index: 55;
+}
+
+.handle__base--left {
+    left: 430px;
+    z-index: 55;
+}
+
+.car__smoke::after {
+    content: "";
+    width: 900px;
+    height: 300px;
+    background: url(../img/smoke.png) center / cover no-repeat;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    z-index: 88;
+}
+
+.traffic-lights {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    height: 500px;
+    width: 200px;
+}
+
+.traffic-lights__body {
+    width: 80px;
+    height: 185px;
+    background-color: #564f4f;
+    /* margin: 0 auto; */
+    border: 7px solid #000000;
+}
+
+.traffic-lights__item {
+    width: 55px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    border: 4px solid #000000;
+
+}
+
+.traffic-lights__item--red {
+    background-color: #e82323;
+    top: 8px;
+    left: 14px;
+    z-index: 3;
+}
+
+.traffic-lights__item--yellow {
+    background-color: #d0ba4c;
+    top: 64px;
+    left: 14px;
+    z-index: 4;
+}
+
+.traffic-lights__item--green {
+    background-color: #28de2e;
+    top: 120px;
+    left: 14px;
+    z-index: 3;
+}
+
+.traffic-lights__pillar {
+    width: 30px;
+    height: 350px;
+    background-color: #573c3c;
+    border: 6px solid #000000;
+    position: absolute;
+    top: 180px;
+    left: 28px;
+}
+
+.traffic-lights__side {
+    width: 20px;
+    height: 49px;
+    border: 4px solid #000000;
+    background-color: #564f4f;
+    position: absolute;
+    left: 74px;
+}
+
+.traffic-lights__side--top {
+    top: 10px;
+
+}
+
+.traffic-lights__side--middle {
+    top: 69px;
+}
+
+.traffic-lights__side--bottom {
+    top: 125px;
+}
+
+.traffic-lights__side--opposide-top {
+    top: 10px;
+    left: -18px;
+}
+
+.traffic-lights__side--opposide-middle {
+    top: 69px;
+    left: -18px;
+}
+
+.traffic-lights__side--opposide-bottom {
+    top: 125px;
+    left: -18px;
+}
+
+.crossing__container {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: 170px;
+    right: 40px;
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+
+.crossing__item {
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.crossing__item--first {
+    bottom: 0;
+}
+
+.crossing__item--second {
+    bottom: 70px;
+}
+
+.crossing__item--third {
+    bottom: 140px;
+}
+
+.crossing__item--fourth {
+    bottom: 210px;
+}
+
+.crossing__item--fifth {
+    top: 75px;
+}
+
+
+.people {
+    position: absolute;
+    top: 50px;
+    left: 1050px;
+    width: 260px;
+}
+
+.people__group--top {
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.people__group>img {
+    height: 260px;
+}
+
+.people__group--right {
+    position: absolute;
+    top: 0;
+    left: 145px;
+
+}
+
+.people__group--dog>img {
+    height: 200px;
+
+}
+
+.people__group--dog {
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+
+@keyframes wheels-front-rotate {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    20% {
+        transform: rotate(720deg);
+    }
+
+    97% {
+        transform: rotate(720deg);
+    }
+
+    100% {
+        transform: rotate(960deg);
+    }
+}
+
+.wheels--left {
+    animation: wheels-front-rotate 15s linear forwards;
+}
+
+@keyframes wheels-back-rotate {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    20% {
+        transform: rotate(720deg);
+    }
+
+    97% {
+        transform: rotate(2200deg);
+    }
+
+    100% {
+        transform: rotate(960deg);
+    }
+}
+
+.wheels--right {
+    animation: wheels-back-rotate 15s linear forwards;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(-900px) scale(0.6);
+    }
+
+    5% {
+        transform: translateX(-900px) scale(0.6);
+    }
+
+    20% {
+        transform: translateX(240px) scale(0.6);
+    }
+
+    96% {
+        transform: translate(240px) scale(0.6);
+    }
+
+    100% {
+        transform: translateX(1400px) scale(0.6);
+    }
+}
+
+.car__container {
+    animation: move 15s linear forwards;
+}
+
+@keyframes smoke {
+    0% {
+        transform: scale(1);
+    }
+
+    65% {
+        transform: scale(1.4);
+    }
+
+    75% {
+        transform: scale(1.5);
+    }
+
+    85% {
+        transform: scale(1.4);
+    }
+
+    97% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.car__smoke {
+    transform-origin: 150px 500px;
+    animation: smoke 15s linear forwards;
+}
+
+
+@keyframes brake-ligth {
+    0% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+
+    90% {
+        box-shadow: 10px 10px 10px 10px #f77e22;
+    }
+
+    97% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+
+.headlight__body--back {
+    animation: brake-ligth 16s cubic-bezier(0, 1.49, .89, .99) forwards;
+}
+
+@keyframes red-light {
+    0% {
+        transform: scale(1);
+    }
+
+    16% {
+        transform: scale(1.4);
+        box-shadow: 0px 0px 10px 20px #b60000;
+    }
+
+    46% {
+        transform: scale(1.6);
+        box-shadow: 0px 0px 10px 20px #b60000;
+    }
+
+    70% {
+        transform: scale(1.4);
+        box-shadow: 0px 0px 10px 20px #b60000;
+    }
+
+    90% {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 20px #b60000;
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.traffic-lights__item--red {
+    animation: red-light 9s linear forwards;
+}
+
+
+
+
+@keyframes yellow-light {
+    0% {
+        transform: scale(1);
+    }
+
+    16% {
+        transform: scale(1.6);
+        box-shadow: 0px 0px 10px 20px #e5f50d;
+    }
+
+    46% {
+        transform: scale(1.4);
+        box-shadow: 0px 0px 10px 20px #e5f50d;
+    }
+
+    70% {
+        transform: scale(1.3);
+        box-shadow: 0px 0px 10px 20px #e5f50d;
+    }
+
+    90% {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 20px #e5f50d;
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.traffic-lights__item--yellow {
+    animation: yellow-light 4s linear 8s forwards;
+}
+
+@keyframes green-light {
+    0% {
+        transform: scale(1);
+    }
+
+    16% {
+        transform: scale(1.6);
+        box-shadow: 0px 0px 10px 20px #54dd36;
+    }
+
+    46% {
+        transform: scale(1.4);
+        box-shadow: 0px 0px 10px 20px #54dd36;
+    }
+
+    70% {
+        transform: scale(1.3);
+        box-shadow: 0px 0px 10px 20px #54dd36;
+    }
+
+    90% {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 20px #54dd36;
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.traffic-lights__item--green {
+    animation: green-light 9s linear 11s forwards;
+}
+
+@keyframes pedestrian-move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(70px);
+    }
+
+    70% {
+        transform: translateY(300px);
+    }
+
+    100% {
+        transform: translateY(600px) scale(0);
+
+    }
+}
+
+.people__group--top {
+    animation: pedestrian-move 6s linear 4s forwards;
+}
+
+.traffic-lights__item--green {
+    animation: green-light 9s linear 11s forwards;
+}
+
+@keyframes pedestrian-boy-move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(60px);
+    }
+
+    70% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(500px) scale(0);
+
+    }
+}
+
+.people__group--right {
+    animation: pedestrian-boy-move 6s linear 4s forwards;
+}
+
+
+@keyframes pedestrian-dog-move {
+    0% {
+
+        transform: translate(100px, 33px) scale(0);
+    }
+
+    50% {
+        transform: translate(100px, 33px) scale(0);
+    }
+
+    70% {
+        transform: translate(100px, 33px) scale(1);
+    }
+
+    80% {
+        transform: translate(170px, 100px) scale(0.9);
+    }
+
+    100% {
+        transform: translateY(880px) scale(0);
+
+    }
+}
+
+.people__group--dog {
+    animation: pedestrian-dog-move 15s ease-out forwards;
+}
+
+.footer__inner {
+    font-size: 24px;
+    letter-spacing: 12px;
+    color: rgb(16, 10, 10);
+    line-height: 2;
+    text-align: center;
+
+}

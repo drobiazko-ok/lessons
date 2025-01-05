@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    background-color: rgba(244, 172, 185, 0.81);
+    line-height: 150%;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.header__content,
+.footer__text {
+    font-size: 24px;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+}
+
+.footer__text {
+    text-align: center;
+}
+
+.page {
+    background-color: #141414;
+    padding-block: 50px;
+    color: #FFF;
+    ;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+.cinema--margin {
+    margin-bottom: 80px;
+}
+
+/* *******************Cтилі для Form dark-cinema************************* */
+
+.cinema__container {
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--Black-15, #262626);
+    background-color: #0F0F0F;
+}
+
+.form-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-dark__top-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.form-dark__field {
+    flex-grow: 1;
+    flex-basis: 350px;
+}
+
+.form-dark__label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.form-dark__input {
+    padding: 16px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--Black-15, #262626);
+    background: #141414;
+    transition: 0.3s ease-in;
+}
+
+.form-dark__input::placeholder,
+.form-dark__textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.form-dark__input:hover,
+.form-dark__textarea:hover {
+    transform: scale(1.03);
+}
+
+.form-dark__textarea {
+    resize: vertical;
+    min-height: 129px;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    background: #141414;
+    padding: 16px;
+    transition: 0.3s ease-in;
+}
+
+
+.form-dark__bottom-part {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbox {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__check-input {
+    appearance: none;
+    flex-basis: 1px;
+}
+
+.checkbox__check-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #999;
+    font-size: 16px;
+}
+
+.checkbox__check-label::before {
+    content: "";
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #262626;
+    background: #0F0F0F;
+    align-self: flex-start;
+}
+
+.checkbox__check-input:checked+.checkbox__check-label::before {
+    background: #FFF url(../img/checkbox-checked.svg) center / 24px no-repeat;
+}
+
+.checkbox__check-input:focus-visible+.checkbox__check-label {
+    outline: 2px solid #FFF;
+    border-radius: 4px;
+}
+
+.form-dark__submit {
+    border-radius: 6px;
+    background: #E50000;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.form-dark__submit:hover {
+    background-color: rgba(141, 16, 16, 0.845);
+    border: 1px solid #FFF;
+}
+
+/* *******************Cтилі для Form Portfolio************************* */
+
+
+.portfolio {
+    color: #697484;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.portfolio__container {
+    max-width: 590px;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.portfolio__text {
+    color: #87909D;
+    margin-bottom: 50px;
+}
+
+.form-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.form-portfolio__input {
+    padding-bottom: 14px;
+    border-bottom: 1.5px solid #E6E8EB;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.form-portfolio__input:focus,
+.form-portfolio__textarea:focus {
+    border-bottom: 1.5px solid #A53DFF;
+}
+
+.form-portfolio__input:focus::placeholder,
+.form-portfolio__textarea:focus::placeholder {
+    color: #A53DFF;
+}
+
+.form-portfolio__budget-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+}
+
+.form-portfolio__input--smaller {
+    flex-basis: 200px;
+}
+
+.form-portfolio__input--longer {
+    flex-basis: 336px;
+}
+
+/* Для Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-portfolio__textarea {
+    min-height: 48px;
+    resize: vertical;
+    padding-bottom: 24px;
+    border-bottom: 1.5px solid #E6E8EB;
+    outline: none;
+}
+
+.form-portfolio__submit-btn {
+    border-radius: 4px;
+    background-color: #A53DFF;
+    padding: 12px 24px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    outline: none;
+    transition: 0.3s ease-in;
+
+}
+
+.form-portfolio__submit-btn::after {
+    content: "";
+    width: 24px;
+    aspect-ratio: 1;
+    background: url(../img/button-icon.svg) center / contain no-repeat;
+    transition: 0.3s ease;
+}
+
+.form-portfolio__submit-btn:hover {
+    background-color: #6b27a7;
+    letter-spacing: 1.5px;
+}
+
+.form-portfolio__submit-btn:hover::after {
+    transform: translateX(9px);
+}
+
+.form-portfolio__submit-btn:focus {
+    text-decoration: underline;
+    box-shadow: 0px 0px 10px 3px rgb(171, 60, 211);
+    border: 1.5px solid #FFF;
+}
